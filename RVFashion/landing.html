@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Collector Dashboard</title>
+      <!-- Bootstarp 5 CSS -->
+      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/custom-style.css">
+   </head>
+   <body class="bg-app">
+
+    <section class="h-100 bg-dark">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+              
+                <div class="col-xl-12">
+                  <div class="card-header">
+                    <div class="row mb-2">
+                      <div class="col-md-12 text-center mb-3">
+                    <h3 class="mb-2 text-uppercase py-3">RV FASHIONS</h3>
+                    </div>
+                    <div class="col-md-7">
+                      <p>Sf 188/1, 3/850</p>
+                      <p>Chettikoorai Thottam</p>
+                      <p>Murugampalayam,</p>
+                      <p class="mb-2">Tirupur-641687</p>
+                      <p><b>Mobile</b>: 9750217401</p>
+                    <p><b>Email</b>: rvfashionsgst@gmail.com</p>
+                    </div>
+                      <div class="col-md-5 d-flex justify-content-end align-items-start flex-column">
+                        <p><b>GST</b>: 33BSIPM5406M1ZJ</p>
+                        <p><b>PAN</b>: BSIPM5406M</p>
+                        <p><b>STATE NAME</b>: TAMIL NADU</p>
+                        <p><b>STATE CODE</b>: 33</p>
+                        <p><b>HSN/ SAC CODE</b>: 99821</p>
+                    </div>
+                    
+                    </div>
+                  </div>
+                  <div class="card-body p-md-5 text-black">
+                   
+                    <div class="row mb-3">
+                      <div class="col-md-12 text-center mb-3">
+                        <h3 class="mb-2 text-uppercase py-3">Accounts Ledger</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                          <div class="record_item">
+                             <div class="record_content">
+                                <div class="record_info">
+                                   <h4>Total Outstanding</h4>
+                                   <h3>1,145</h3>
+                                </div>
+                               
+                             </div>
+                             <div class="record_stat">
+                               
+                                <h5>This Month</h5>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6">
+                        <div class="record_item">
+                           <div class="record_content">
+                              <div class="record_info">
+                                 <h4>Amount Credited</h4>
+                                 <h3>1,145</h3>
+                              </div>
+                             
+                           </div>
+                           <div class="record_stat">
+                            
+                              <h5>This Month</h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                      <div class="record_item">
+                         <div class="record_content">
+                            <div class="record_info">
+                               <h4>Reports</h4>
+                               <h3>1,145</h3>
+                            </div>
+                         </div>
+                         <div class="record_stat">
+                            <h5>Click here to view reports</h5>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="table-responsive mt-5">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>S.No</th>
+                          <th>Date</th>
+                          <th>Type</th>
+                          <th>Bill No</th>
+                          <th>Amount</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>27/09/2023</td>
+                          <td>Receipt</td>
+                          <td>720</td>
+                          <td><span class="text-success text-amount">13000</span></td>
+                          <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_new_bill"><i class="fa fa-pen text-success"></i></a><a href="" data-bs-toggle="modal" data-bs-target="#delete_new_bill"><i class="fa fa-trash text-danger ms-3"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>27/09/2023</td>
+                          <td>Sale</td>
+                          <td>50000</td>
+                          <td><span class="text-success text-amount">13000</span></td>
+                          <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_new_bill"><i class="fa fa-pen text-success"></i></a><a href="" data-bs-toggle="modal" data-bs-target="#delete_new_bill"><i class="fa fa-trash text-danger ms-3"></i></a></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                    </div>
+                      
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+     <!-- The Modal -->
+<div class="modal fade" id="add_new_client">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Client</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Client Name</label>
+          <input type="text" class="form-control" id="New_client" placeholder="Enter Client Name" name="Client_new">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Address Line - 1</label>
+          <input type="text" class="form-control" id="Address_line_1" placeholder="Enter Address" name="Address_line">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Address Line-2</label>
+          <input type="text" class="form-control" id="Address_line_2" placeholder="Enter Address" name="Address_line">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">District</label>
+          <select class="form-select">
+            <option>SELECT</option>
+            <option>Tirupur</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Pincode</label>
+          <input type="text" class="form-control" id="Pincode" placeholder="Enter Pincode" name="Pincode">
+        </div>
+        <h5 class="my-4 text-decoration-underline">GST DETAILS</h5>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">GST</label>
+          <input type="text" class="form-control" id="GST" placeholder="Enter GST" name="GST">
+        </div>
+       </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success px-3" data-bs-dismiss="modal">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+ <!-- The billing Modal -->
+ <div class="modal fade" id="add_new_bill">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Bill</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Client DC No</label>
+          <input type="text" class="form-control" id="Client_DC" placeholder="Enter Client DC" name="Client_DC">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Our DC No</label>
+          <input type="number" class="form-control" id="Our_DC" placeholder="Enter DC Number" name="Our_DC">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Particulars</label>
+          <select class="form-select">
+            <option>SELECT</option>
+            <option>Tirupur</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Rolls</label>
+          <input type="number" class="form-control" id="Rolls" placeholder="Enter Rolls" name="Rolls">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Weight</label>
+          <input type="number" class="form-control" id="Weight" placeholder="Enter Weight" name="Weight">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Rate Per Kg</label>
+          <input type="number" class="form-control" id="Weight_amount" placeholder="Enter Amount" name="Weight_amount">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Amount</label>
+          <input type="number" class="form-control" id="Amount" name="Amount" value="5724.700" disabled>
+        </div>
+       </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success px-3" data-bs-dismiss="modal">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The edit billing Modal -->
+<div class="modal fade" id="edit_new_bill">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Bill</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Client DC No</label>
+          <input type="text" class="form-control" id="Client_DC" placeholder="Enter Client DC" name="Client_DC">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Our DC No</label>
+          <input type="number" class="form-control" id="Our_DC" placeholder="Enter DC Number" name="Our_DC">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Particulars</label>
+          <select class="form-select">
+            <option>SELECT</option>
+            <option>Tirupur</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Rolls</label>
+          <input type="number" class="form-control" id="Rolls" placeholder="Enter Rolls" name="Rolls">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Weight</label>
+          <input type="number" class="form-control" id="Weight" placeholder="Enter Weight" name="Weight">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Rate Per Kg</label>
+          <input type="number" class="form-control" id="Weight_amount" placeholder="Enter Amount" name="Weight_amount">
+        </div>
+        <div class="col-md-6 mb-2">
+          <label class="form-label mb-1" for="">Amount</label>
+          <input type="number" class="form-control" id="Amount" name="Amount" value="5724.700" disabled>
+        </div>
+       </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success px-3" data-bs-dismiss="modal">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The delete billing Modal -->
+<div class="modal fade" id="delete_new_bill">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header border-bottom-0">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-md-12 text-center mb-2">
+          <h5 class="form-label mb-1" for="">Do you really want to delete the bill?</h5>
+        </div>
+       </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer border-top-0 text-center">
+        <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+      <!-- Vendor JS files -->
+      <script src="js/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>      
+      <!-- Template Custom JS File -->
+      <script src="js/custom.js"></script>      
+   </body>
+</html>
